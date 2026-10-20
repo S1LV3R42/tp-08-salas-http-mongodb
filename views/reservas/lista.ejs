@@ -1,0 +1,1 @@
+<h1><%= seccion %></h1><div class="grilla-tarjetas"><% reservas.forEach(r => { %><article class="tarjeta"><h2><%= r.sala %></h2><p><%= r.fecha %> (<%= r.turno %>)</p><p>Estado: <%= r.estado %></p><a href="/reservas/<%= r.id %>" class="boton">Ver Detalle</a></article><% }) %></div>
